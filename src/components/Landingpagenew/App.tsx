@@ -12,28 +12,28 @@ import { createAppKit } from '@reown/appkit/react';
 import { WagmiAdapter } from '@reown/appkit-adapter-wagmi';
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 
-import Header from '../../Header.tsx';
+import Header from '../Header.tsx';
 import Login from '../../pages/Login.tsx';
 import Register from '../../pages/Register.tsx';
 import VerifyEmail from '../../pages/VerifyEmail.tsx';
 import GoogleCalendarCallback from '../GoogleCalendarCallback.jsx';
-import MapboxMap from '../../Map.tsx';
-import WeatherWidget from '../../WeatherWidget.tsx';
-import Logo from '../../Logo.tsx';
-import Footer from '../../Footer.tsx';
-import NavigationMenu from '../../NavigationMenu.tsx';
-import CookieBanner from '../../CookieBanner.tsx';
-import ErrorBoundary from '../../ErrorBoundary.tsx';
-import LoadingSpinner from '../../LoadingSpinner.tsx';
-import ServicesCarousel from '../../ServicesCarousel.tsx';
-import CheckoutPage from '../../CheckoutPage.tsx';
+import MapboxMap from '../Map.tsx';
+import WeatherWidget from '../WeatherWidget.tsx';
+import Logo from '../Logo.tsx';
+import Footer from '../Footer.tsx';
+import NavigationMenu from '../NavigationMenu.tsx';
+import CookieBanner from '../CookieBanner.tsx';
+import ErrorBoundary from '../ErrorBoundary.tsx';
+import LoadingSpinner from '../LoadingSpinner.tsx';
+import ServicesCarousel from '../ServicesCarousel.tsx';
+import CheckoutPage from '../CheckoutPage.tsx';
 import type { Location, Weather, Stop, BookingDetails } from '../../types.ts';
 import { AuthProvider, useAuth } from '../../context/AuthContext.tsx';
 import { ThemeProvider } from '../../context/ThemeContext.tsx';
 import { MaintenanceProvider, useMaintenance } from '../../context/MaintenanceContext.tsx';
 import MaintenanceMode from '../../MaintenanceMode.tsx';
-import ChatSupport from '../../ChatSupport.tsx';
-import Dashboard from '../../Dashboard.tsx';
+import ChatSupport from '../ChatSupport.tsx';
+import Dashboard from '../Dashboard.tsx';
 import AdminLayout from '../../pages/admin/Layout.tsx';
 import AdminAnalytics from '../../pages/admin/Analytics.tsx';
 import AdminBookingRequests from '../../pages/admin/BookingRequests.tsx';
@@ -41,7 +41,7 @@ import AdminUserRequests from '../../pages/admin/UserRequests.tsx';
 import AdminKYCVerification from '../../pages/admin/KYCVerification.tsx';
 import AdminCO2Certificates from '../../pages/admin/CO2Certificates.tsx';
 import AdminManagement from '../../pages/admin/Management.tsx';
-import Faq from '../../faq.tsx';  // LOWERCASE faq.tsx
+import Faq from '../faq.tsx';  // LOWERCASE faq.tsx
 
 // Import pages
 import FixedOffers from '../../pages/FixedOffers.tsx';
