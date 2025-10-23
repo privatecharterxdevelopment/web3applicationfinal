@@ -10,8 +10,7 @@ import WalletMenu from '../WalletMenu';
 import LoginModal from '../LoginModalNew';
 import RegisterModalNew from '../RegisterModalNew';
 import ForgotPasswordModal from '../ForgotPasswordModal';
-import UnifiedBookingFlow from '../../components/UnifiedBookingFlow';
-import DashboardOverviewNew from '../../components/DashboardOverviewNew';
+import UnifiedBookingFlow from '../UnifiedBookingFlow';
 
 const TokenizedAssets = () => {
   const navigate = useNavigate();
