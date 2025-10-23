@@ -31,7 +31,7 @@ import type { Location, Weather, Stop, BookingDetails } from '../../types.ts';
 import { AuthProvider, useAuth } from '../../context/AuthContext.tsx';
 import { ThemeProvider } from '../../context/ThemeContext.tsx';
 import { MaintenanceProvider, useMaintenance } from '../../context/MaintenanceContext.tsx';
-import MaintenanceMode from '../../MaintenanceMode.tsx';
+import MaintenanceMode from '../MaintenanceMode.tsx';
 import ChatSupport from '../ChatSupport.tsx';
 import Dashboard from '../Dashboard.tsx';
 import AdminLayout from '../../pages/admin/Layout.tsx';
