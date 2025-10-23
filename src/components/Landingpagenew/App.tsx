@@ -70,8 +70,8 @@ import LuxuryCars from '../../pages/LuxuryCars.tsx';
 import BlogPosts from '../../pages/BlogPosts.tsx';
 import ResetPassword from '../../pages/ResetPassword.tsx';
 import JetCard from '../../pages/JetCard.tsx';
-import EnhancedServicesMap from '../../EnhancedServicesMap.jsx';
-import TravelDesignerPage from '../../TravelDesigner.tsx';
+import EnhancedServicesMap from '../EnhancedServicesMap.jsx';
+import TravelDesignerPage from '../TravelDesigner.tsx';
 
 // Import TokenSwap page
 import TokenSwapPage from './TokenSwapPage';
@@ -109,7 +109,7 @@ import ChatWidget from './ChatWidget.jsx';
 import Marketplace from '../../services/Marketplace.tsx';
 
 // Import the new unified booking flow instead of separate components
-import UnifiedBookingFlow from '../../UnifiedBookingFlow.tsx';
+import UnifiedBookingFlow from '../UnifiedBookingFlow.tsx';
 
 import { supabase } from '../../lib/supabase.ts';
 
