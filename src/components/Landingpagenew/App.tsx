@@ -13,9 +13,9 @@ import { WagmiAdapter } from '@reown/appkit-adapter-wagmi';
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 
 import Header from '../../Header.tsx';
-import Login from '../../../pages/Login.tsx';
-import Register from '../../../pages/Register.tsx';
-import VerifyEmail from '../../../pages/VerifyEmail.tsx';
+import Login from '../../pages/Login.tsx';
+import Register from '../../pages/Register.tsx';
+import VerifyEmail from '../../pages/VerifyEmail.tsx';
 import GoogleCalendarCallback from '../GoogleCalendarCallback.jsx';
 import MapboxMap from '../../Map.tsx';
 import WeatherWidget from '../../WeatherWidget.tsx';
@@ -27,49 +27,49 @@ import ErrorBoundary from '../../ErrorBoundary.tsx';
 import LoadingSpinner from '../../LoadingSpinner.tsx';
 import ServicesCarousel from '../../ServicesCarousel.tsx';
 import CheckoutPage from '../../CheckoutPage.tsx';
-import type { Location, Weather, Stop, BookingDetails } from '../../../types.ts';
-import { AuthProvider, useAuth } from '../../../context/AuthContext.tsx';
-import { ThemeProvider } from '../../../context/ThemeContext.tsx';
-import { MaintenanceProvider, useMaintenance } from '../../../context/MaintenanceContext.tsx';
+import type { Location, Weather, Stop, BookingDetails } from '../../types.ts';
+import { AuthProvider, useAuth } from '../../context/AuthContext.tsx';
+import { ThemeProvider } from '../../context/ThemeContext.tsx';
+import { MaintenanceProvider, useMaintenance } from '../../context/MaintenanceContext.tsx';
 import MaintenanceMode from '../../MaintenanceMode.tsx';
 import ChatSupport from '../../ChatSupport.tsx';
 import Dashboard from '../../Dashboard.tsx';
-import AdminLayout from '../../../pages/admin/Layout.tsx';
-import AdminAnalytics from '../../../pages/admin/Analytics.tsx';
-import AdminBookingRequests from '../../../pages/admin/BookingRequests.tsx';
-import AdminUserRequests from '../../../pages/admin/UserRequests.tsx';
-import AdminKYCVerification from '../../../pages/admin/KYCVerification.tsx';
-import AdminCO2Certificates from '../../../pages/admin/CO2Certificates.tsx';
-import AdminManagement from '../../../pages/admin/Management.tsx';
+import AdminLayout from '../../pages/admin/Layout.tsx';
+import AdminAnalytics from '../../pages/admin/Analytics.tsx';
+import AdminBookingRequests from '../../pages/admin/BookingRequests.tsx';
+import AdminUserRequests from '../../pages/admin/UserRequests.tsx';
+import AdminKYCVerification from '../../pages/admin/KYCVerification.tsx';
+import AdminCO2Certificates from '../../pages/admin/CO2Certificates.tsx';
+import AdminManagement from '../../pages/admin/Management.tsx';
 import Faq from '../../faq.tsx';  // LOWERCASE faq.tsx
 
 // Import pages
-import FixedOffers from '../../../pages/FixedOffers.tsx';
-import EmptyLegOffers from '../../../pages/EmptyLegOffers.tsx';
-import AdminOffers from '../../../pages/AdminOffers.tsx';
-import BehindTheScene from '../../../pages/BehindTheScene.tsx';
-import HowItWorks from '../../../pages/HowItWorks.tsx';
-import Contact from '../../../pages/Contact.tsx';
-import Crypto from '../../../pages/Crypto.tsx';
-import GroupCharter from '../../../pages/services/GroupCharter.tsx';
-import HelicopterCharter from '../../../pages/services/HelicopterCharter.tsx';
-import PrivateJetCharter from '../../../pages/services/PrivateJetCharter.tsx';
-import PartnersBoard from '../../../pages/services/PartnersBoard.tsx';
-import EVTOL from '../../../pages/services/EVTOL.tsx';
-import EVTOLPage from '../../../pages/eVtolpage.tsx';
-import ICO from '../../../pages/web3/ICO.tsx';
-import NFTCollection from '../../../pages/web3/NFTCollection.tsx';
-import CarbonCertificates from '../../../pages/web3/CarbonCertificates.tsx';
-import DAODrivenTokenizedAssetLicensing from '../../../pages/web3/DAODrivenTokenizedAssetLicensing.tsx';
-import Impressum from '../../../pages/Legal/Impressum.tsx';
-import PrivacyPolicy from '../../../pages/Legal/PrivacyPolicy.tsx';
-import TermsConditions from '../../../pages/Legal/TermsConditions.tsx';
-import Partners from '../../../pages/Partners.tsx';
-import AITravelAgent from '../../../pages/web3/AITravelAgent.tsx';
-import LuxuryCars from '../../../pages/LuxuryCars.tsx';
-import BlogPosts from '../../../pages/BlogPosts.tsx';
-import ResetPassword from '../../../pages/ResetPassword.tsx';
-import JetCard from '../../../pages/JetCard.tsx';
+import FixedOffers from '../../pages/FixedOffers.tsx';
+import EmptyLegOffers from '../../pages/EmptyLegOffers.tsx';
+import AdminOffers from '../../pages/AdminOffers.tsx';
+import BehindTheScene from '../../pages/BehindTheScene.tsx';
+import HowItWorks from '../../pages/HowItWorks.tsx';
+import Contact from '../../pages/Contact.tsx';
+import Crypto from '../../pages/Crypto.tsx';
+import GroupCharter from '../../pages/services/GroupCharter.tsx';
+import HelicopterCharter from '../../pages/services/HelicopterCharter.tsx';
+import PrivateJetCharter from '../../pages/services/PrivateJetCharter.tsx';
+import PartnersBoard from '../../pages/services/PartnersBoard.tsx';
+import EVTOL from '../../pages/services/EVTOL.tsx';
+import EVTOLPage from '../../pages/eVtolpage.tsx';
+import ICO from '../../pages/web3/ICO.tsx';
+import NFTCollection from '../../pages/web3/NFTCollection.tsx';
+import CarbonCertificates from '../../pages/web3/CarbonCertificates.tsx';
+import DAODrivenTokenizedAssetLicensing from '../../pages/web3/DAODrivenTokenizedAssetLicensing.tsx';
+import Impressum from '../../pages/Legal/Impressum.tsx';
+import PrivacyPolicy from '../../pages/Legal/PrivacyPolicy.tsx';
+import TermsConditions from '../../pages/Legal/TermsConditions.tsx';
+import Partners from '../../pages/Partners.tsx';
+import AITravelAgent from '../../pages/web3/AITravelAgent.tsx';
+import LuxuryCars from '../../pages/LuxuryCars.tsx';
+import BlogPosts from '../../pages/BlogPosts.tsx';
+import ResetPassword from '../../pages/ResetPassword.tsx';
+import JetCard from '../../pages/JetCard.tsx';
 import EnhancedServicesMap from '../../EnhancedServicesMap.jsx';
 import TravelDesignerPage from '../../TravelDesigner.tsx';
 
@@ -106,12 +106,12 @@ import CO2CertificateDetail from './CO2CertificateDetail.jsx';
 import ChatWidget from './ChatWidget.jsx';
 
 // Import the CO2 Marketplace component
-import Marketplace from '../../../services/Marketplace.tsx';
+import Marketplace from '../../services/Marketplace.tsx';
 
 // Import the new unified booking flow instead of separate components
 import UnifiedBookingFlow from '../../UnifiedBookingFlow.tsx';
 
-import { supabase } from '../../../lib/supabase.ts';
+import { supabase } from '../../lib/supabase.ts';
 
 // ===== WAGMI/REOWN CONFIGURATION =====
 const projectId = 'a9111834382219cf7080a2d516cad517';

@@ -4,10 +4,10 @@ import {
   Info, CheckCircle, AlertCircle, DollarSign, Percent,
   FileText, Download
 } from 'lucide-react';
-import { useAuth } from '../../../../context/AuthContext';
+import { useAuth } from '../../../context/AuthContext';
 import { useAccount } from 'wagmi';
-import { purchaseSTOShares } from '../../../services/stoContractService';
-import { supabase } from '../../../lib/supabase';
+import { purchaseSTOShares } from '../../services/stoContractService';
+import { supabase } from '../../lib/supabase';
 
 export default function AssetDetailModal({ asset, userKYCStatus, onClose, onRefresh }) {
   const { user } = useAuth();
